@@ -72,8 +72,21 @@
 				</a>
 				<nav class="top-nav-area w-100">
 					<div class="user-panel">
-						<a href="">Login</a> / <a href="">Register</a>
-					</div>
+  <a href="#" class="cool-button" id="google-login">
+    <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Logo" class="google-logo">
+    Login with Google
+  </a>
+</div>
+					<script>
+  // JavaScript to set the href attribute when the user clicks the anchor tag
+  document.getElementById("google-login").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent default action (e.g., following the link)
+    // Set the href attribute to the Google OAuth URL
+    this.href = "https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?client_id=470834414355-33f7lrbtpmpmo6p4ls5lcd3g5hdo48gc.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fcreedmanvr.github.io%2Fcool&response_type=token&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&service=lso&o2v=1&theme=mn&ddm=0&flowName=GeneralOAuthFlow";
+    // Trigger the click event to follow the link
+    this.click();
+  });
+</script>
 					<!-- Menu -->
 					<ul class="main-menu primary-menu">
 						<li><a href="home.html">Home</a></li>
